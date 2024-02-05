@@ -72,6 +72,12 @@ export function useNavData() {
             path: paths.dashboard.general.analytics,
             icon: ICONS.analytics,
           },
+          // NEWS & UPDATES
+          {
+            title: t('news & updates'),
+            path: paths.page404,
+            icon: ICONS.menuItem,
+          },
           // {
           //   title: t('banking'),
           //   path: paths.dashboard.general.banking,
@@ -82,11 +88,11 @@ export function useNavData() {
           //   path: paths.dashboard.general.booking,
           //   icon: ICONS.booking,
           // },
-          {
-            title: t('file'),
-            path: paths.dashboard.general.file,
-            icon: ICONS.file,
-          },
+          // {
+          //   title: t('file'),
+          //   path: paths.dashboard.general.file,
+          //   icon: ICONS.file,
+          // },
         ],
       },
 
@@ -97,14 +103,14 @@ export function useNavData() {
         items: [
           // USER
           {
-            title: t('user'),
+            title: t('my profile'),
             path: paths.dashboard.user.root,
             icon: ICONS.user,
             children: [
               // { title: t('profile'), path: paths.dashboard.user.root },
               // { title: t('cards'), path: paths.dashboard.user.cards },
               // { title: t('list'), path: paths.dashboard.user.list },
-              { title: t('create'), path: paths.dashboard.user.new },
+              // { title: t('create'), path: paths.dashboard.user.new },
               // { title: t('edit'), path: paths.dashboard.user.demo.edit },
               { title: t('account'), path: paths.dashboard.user.account },
             ],
@@ -152,7 +158,7 @@ export function useNavData() {
           //     { title: t('edit'), path: paths.dashboard.invoice.demo.edit },
           //   ],
           // },
-
+          
           // BLOG
           {
             title: t('blog'),
@@ -191,13 +197,14 @@ export function useNavData() {
           //     { title: t('edit'), path: paths.dashboard.tour.demo.edit },
           //   ],
           // },
-
+          
           // FILE MANAGER
           {
             title: t('file_manager'),
             path: paths.dashboard.fileManager,
             icon: ICONS.folder,
           },
+          
 
           // MAIL
           // {
@@ -228,8 +235,7 @@ export function useNavData() {
           //   icon: ICONS.kanban,
           // },
         ],
-      },
-
+      }
       // DEMO MENU STATES
       // {
       //   subheader: t(t('other_cases')),
