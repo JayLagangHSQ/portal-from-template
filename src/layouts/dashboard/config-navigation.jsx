@@ -155,7 +155,7 @@ export function useNavData() {
 
           // BLOG
           {
-            title: t('wiki'),
+            title: t('blog'),
             path: paths.dashboard.post.root,
             icon: ICONS.blog,
             children: [
