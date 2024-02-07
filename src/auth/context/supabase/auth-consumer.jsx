@@ -5,7 +5,7 @@ import { SplashScreen } from 'src/components/loading-screen';
 import { AuthContext } from './auth-context';
 
 // ----------------------------------------------------------------------
-
+//wew
 export function AuthConsumer({ children }) {
   return (
     <AuthContext.Consumer>
